@@ -63,8 +63,8 @@ class ZwaveGarageDoor(zwave.ZWaveDeviceEntity, GarageDoorDevice):
 
     def close_door(self):
         """Close the garage door."""
-        self._value.node.set_switch(self._value.value_id, False)
+        value.data = False
 
     def open_door(self):
         """Open the garage door."""
-        self._value.node.set_switch(self._value.value_id, True)
+        value.data = True
